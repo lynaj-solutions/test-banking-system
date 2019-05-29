@@ -1,0 +1,146 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" /><link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous" /><title>Cosmic Ray Report</title></head><body><h1>Cosmic Ray Report</h1><div class="container work-item"><h4 class="job_id">1 : job ID 490846377761486c8d730eeb53d367dd</h4><div class="alert alert-danger test-outcome" role="alert"><p>SURVIVED</p><p>worker outcome: normal</p><p>test outcome: survived</p></div><a href="pycharm://open?file=manage.py&amp;line=5"><pre class="location">manage.py, start pos: (5, 12), end pos: (5, 14)</pre></a><pre>operator: core/ReplaceComparisonOperator_Eq_NotEq, occurrence: 0</pre><div class="alert alert-secondary"><pre class="diff">--- mutation diff ---
+--- amanage.py
++++ bmanage.py
+@@ -2,7 +2,7 @@
+ import os
+ import sys
+ 
+-if __name__ == '__main__':
++if __name__ != '__main__':
+     os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'config.settings')
+ 
+     try:</pre></div></div><div class="container work-item"><h4 class="job_id">2 : job ID 07a2604fdfc04210b1a87b0f1b0f7c46</h4><div class="alert alert-danger test-outcome" role="alert"><p>SURVIVED</p><p>worker outcome: normal</p><p>test outcome: survived</p></div><a href="pycharm://open?file=manage.py&amp;line=5"><pre class="location">manage.py, start pos: (5, 12), end pos: (5, 14)</pre></a><pre>operator: core/ReplaceComparisonOperator_Eq_Lt, occurrence: 0</pre><div class="alert alert-secondary"><pre class="diff">--- mutation diff ---
+--- amanage.py
++++ bmanage.py
+@@ -2,7 +2,7 @@
+ import os
+ import sys
+ 
+-if __name__ == '__main__':
++if __name__ &lt; '__main__':
+     os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'config.settings')
+ 
+     try:</pre></div></div><div class="container work-item"><h4 class="job_id">3 : job ID 3ccd7ff343c54b348c667b851b8e72f3</h4><div class="alert alert-info test-outcome" role="alert"><p>worker outcome: normal</p><p>test outcome: incompetent</p></div><a href="pycharm://open?file=manage.py&amp;line=5"><pre class="location">manage.py, start pos: (5, 12), end pos: (5, 14)</pre></a><pre>operator: core/ReplaceComparisonOperator_Eq_LtE, occurrence: 0</pre><div class="alert alert-secondary"><pre class="diff">--- mutation diff ---
+--- amanage.py
++++ bmanage.py
+@@ -2,7 +2,7 @@
+ import os
+ import sys
+ 
+-if __name__ == '__main__':
++if __name__ &lt;= '__main__':
+     os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'config.settings')
+ 
+     try:</pre></div><div class="alert alert-secondary"><pre class="diff">Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/subprocess.py", line 425, in run
+    stdout, stderr = process.communicate(input, timeout=timeout)
+  File "/usr/local/lib/python3.6/subprocess.py", line 863, in communicate
+    stdout, stderr = self._communicate(input, endtime, timeout)
+  File "/usr/local/lib/python3.6/subprocess.py", line 1535, in _communicate
+    self._check_timeout(endtime, orig_timeout)
+  File "/usr/local/lib/python3.6/subprocess.py", line 891, in _check_timeout
+    raise TimeoutExpired(self.args, orig_timeout)
+subprocess.TimeoutExpired: Command '['python', 'manage.py', 'test', 'transactions']' timed out after 15.0 seconds
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/site-packages/cosmic_ray/testing.py", line 32, in run_tests
+    timeout=timeout,
+  File "/usr/local/lib/python3.6/subprocess.py", line 430, in run
+    stderr=stderr)
+subprocess.TimeoutExpired: Command '['python', 'manage.py', 'test', 'transactions']' timed out after 15.0 seconds
+</pre></div></div><div class="container work-item"><h4 class="job_id">4 : job ID bdc6f5e0ca8c4dd4b2749fba7c35e66c</h4><div class="alert alert-danger test-outcome" role="alert"><p>SURVIVED</p><p>worker outcome: normal</p><p>test outcome: survived</p></div><a href="pycharm://open?file=manage.py&amp;line=5"><pre class="location">manage.py, start pos: (5, 12), end pos: (5, 14)</pre></a><pre>operator: core/ReplaceComparisonOperator_Eq_Gt, occurrence: 0</pre><div class="alert alert-secondary"><pre class="diff">--- mutation diff ---
+--- amanage.py
++++ bmanage.py
+@@ -2,7 +2,7 @@
+ import os
+ import sys
+ 
+-if __name__ == '__main__':
++if __name__ &gt; '__main__':
+     os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'config.settings')
+ 
+     try:</pre></div></div><div class="container work-item"><h4 class="job_id">5 : job ID 4a41b8e161f34336b6fa39b82118357e</h4><div class="alert alert-info test-outcome" role="alert"><p>worker outcome: normal</p><p>test outcome: incompetent</p></div><a href="pycharm://open?file=manage.py&amp;line=5"><pre class="location">manage.py, start pos: (5, 12), end pos: (5, 14)</pre></a><pre>operator: core/ReplaceComparisonOperator_Eq_GtE, occurrence: 0</pre><div class="alert alert-secondary"><pre class="diff">--- mutation diff ---
+--- amanage.py
++++ bmanage.py
+@@ -2,7 +2,7 @@
+ import os
+ import sys
+ 
+-if __name__ == '__main__':
++if __name__ &gt;= '__main__':
+     os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'config.settings')
+ 
+     try:</pre></div><div class="alert alert-secondary"><pre class="diff">Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/subprocess.py", line 425, in run
+    stdout, stderr = process.communicate(input, timeout=timeout)
+  File "/usr/local/lib/python3.6/subprocess.py", line 863, in communicate
+    stdout, stderr = self._communicate(input, endtime, timeout)
+  File "/usr/local/lib/python3.6/subprocess.py", line 1535, in _communicate
+    self._check_timeout(endtime, orig_timeout)
+  File "/usr/local/lib/python3.6/subprocess.py", line 891, in _check_timeout
+    raise TimeoutExpired(self.args, orig_timeout)
+subprocess.TimeoutExpired: Command '['python', 'manage.py', 'test', 'transactions']' timed out after 15.0 seconds
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/site-packages/cosmic_ray/testing.py", line 32, in run_tests
+    timeout=timeout,
+  File "/usr/local/lib/python3.6/subprocess.py", line 430, in run
+    stderr=stderr)
+subprocess.TimeoutExpired: Command '['python', 'manage.py', 'test', 'transactions']' timed out after 15.0 seconds
+</pre></div></div><div class="container work-item"><h4 class="job_id">6 : job ID 4f477efeea1e4392beca8940d53f713d</h4><div class="alert alert-danger test-outcome" role="alert"><p>SURVIVED</p><p>worker outcome: normal</p><p>test outcome: survived</p></div><a href="pycharm://open?file=manage.py&amp;line=5"><pre class="location">manage.py, start pos: (5, 12), end pos: (5, 14)</pre></a><pre>operator: core/ReplaceComparisonOperator_Eq_Is, occurrence: 0</pre><div class="alert alert-secondary"><pre class="diff">--- mutation diff ---
+--- amanage.py
++++ bmanage.py
+@@ -2,7 +2,7 @@
+ import os
+ import sys
+ 
+-if __name__ == '__main__':
++if __name__ is '__main__':
+     os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'config.settings')
+ 
+     try:</pre></div></div><div class="container work-item"><h4 class="job_id">7 : job ID 55305de8cc114eb2854ed6b3b02e6a20</h4><div class="alert alert-info test-outcome" role="alert"><p>worker outcome: normal</p><p>test outcome: incompetent</p></div><a href="pycharm://open?file=manage.py&amp;line=5"><pre class="location">manage.py, start pos: (5, 12), end pos: (5, 14)</pre></a><pre>operator: core/ReplaceComparisonOperator_Eq_IsNot, occurrence: 0</pre><div class="alert alert-secondary"><pre class="diff">--- mutation diff ---
+--- amanage.py
++++ bmanage.py
+@@ -2,7 +2,7 @@
+ import os
+ import sys
+ 
+-if __name__ == '__main__':
++if __name__ is not '__main__':
+     os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'config.settings')
+ 
+     try:</pre></div><div class="alert alert-secondary"><pre class="diff">Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/subprocess.py", line 425, in run
+    stdout, stderr = process.communicate(input, timeout=timeout)
+  File "/usr/local/lib/python3.6/subprocess.py", line 863, in communicate
+    stdout, stderr = self._communicate(input, endtime, timeout)
+  File "/usr/local/lib/python3.6/subprocess.py", line 1535, in _communicate
+    self._check_timeout(endtime, orig_timeout)
+  File "/usr/local/lib/python3.6/subprocess.py", line 891, in _check_timeout
+    raise TimeoutExpired(self.args, orig_timeout)
+subprocess.TimeoutExpired: Command '['python', 'manage.py', 'test', 'transactions']' timed out after 15.0 seconds
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/site-packages/cosmic_ray/testing.py", line 32, in run_tests
+    timeout=timeout,
+  File "/usr/local/lib/python3.6/subprocess.py", line 430, in run
+    stderr=stderr)
+subprocess.TimeoutExpired: Command '['python', 'manage.py', 'test', 'transactions']' timed out after 15.0 seconds
+</pre></div></div><div class="container work-item"><h4 class="job_id">8 : job ID cf8b8ad1970e4e389449c149279a2645</h4><div class="alert alert-danger test-outcome" role="alert"><p>SURVIVED</p><p>worker outcome: normal</p><p>test outcome: survived</p></div><a href="pycharm://open?file=manage.py&amp;line=5"><pre class="location">manage.py, start pos: (5, 3), end pos: (5, 25)</pre></a><pre>operator: core/AddNot, occurrence: 0</pre><div class="alert alert-secondary"><pre class="diff">--- mutation diff ---
+--- amanage.py
++++ bmanage.py
+@@ -2,7 +2,7 @@
+ import os
+ import sys
+ 
+-if __name__ == '__main__':
++if not __name__ == '__main__':
+     os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'config.settings')
+ 
+     try:</pre></div></div><script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous" /><script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous" /><script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous" /></body></html>

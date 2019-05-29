@@ -1,0 +1,14 @@
+{
+  "dependencies": {
+    "eslint-cli": "^1.1.1",
+    "vue-recaptcha": "^1.1.1",
+    "vue-resource": "^1.5.1",
+    "vue-resource-mock": "0.0.11",
+    "vue-svgicon": "^3.2.2",
+    "vue-sweetalert2": "^1.6.4",
+    "vuejs-smart-table": "0.0.3"
+  },
+  "devDependencies": {
+    "webpack": "^4.28.4"
+  }
+}

@@ -1,0 +1,1002 @@
+.file-upload-form, .image-preview {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  padding: 20px;
+}
+
+img.preview {
+  width: 200px;
+  background-color: white;
+  border: 1px solid #DDD;
+  padding: 5px;
+}
+
+
+.multiselect__tags {
+  background-color: transparent !important;
+}
+.text-reader-div-inside {
+  bottom: center;
+  font-size: 4em;
+  opacity: 1;
+  background-size: 100%;
+  width: 2em;
+  height: 2em;
+  margin: auto;
+  margin-top: 0.4em;
+}
+
+.stepper-button {
+  position: relative;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -ms-flex-align: center;
+  align-items: center;
+  padding: 2rem;
+  border-top: 1px solid #cccccc;
+  border-top-color: rgb(204, 204, 204);
+  border-top-style: solid;
+  border-top-width: 1px;
+  display: flex;
+  justify-content: center;
+  background-color: #3383c8;
+  color: white;
+  -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  font-family: 'Raleway', sans-serif;
+  transition: 0.3s ease-in-out;
+  padding: 27px 60px 20px 55px;
+  max-width: 9em;
+  margin: auto;
+  font-size: 5em !important;
+}
+
+.stepper-button > .material-icons {
+  font-size: 1.2em !important;
+}
+
+.close:hover {
+  opacity: 1;
+}
+
+.close:before, .close:after {
+  position: absolute;
+  left: 15px;
+  content: ' ';
+  height: 6em;
+  width: 0.5em;
+  border: 1px solid;
+  border-radius: 20em;
+  z-index: 999 !important;
+  background-color: #333;
+}
+
+.close:before {
+  transform: rotate(45deg);
+}
+
+.close:after {
+  transform: rotate(-45deg);
+}
+
+
+.fadeslower-enter-active, .fadeslower-leave-active {
+  transition: opacity .30s;
+}
+
+.fadeslower-enter, .fadeslower-leave-to /* .fade-leave-active below version 2.1.8 */
+{
+  opacity: 0;
+}
+
+.ui-input-box-div {
+  width: 100%;
+  margin: 0;
+  max-width: 100%;
+  -ms-flex: 1 0 auto;
+  flex: 1 0 auto;
+  outline: 0;
+  -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
+  text-align: left;
+  line-height: 1.21428571em;
+  font-family: Lato, 'Helvetica Neue', Arial, Helvetica, sans-serif;
+  padding: .67857143em 1em;
+  background: #e8f6fb;
+  border: 2px solid rgba(30, 30, 30, 0.2);
+  color: rgba(5, 8, 40, 0.9);
+  border-radius: .28571429rem;
+  -webkit-transition: border-color .1s ease, -webkit-box-shadow .1s ease;
+  transition: border-color .1s ease, -webkit-box-shadow .1s ease;
+  transition: box-shadow .1s ease, border-color .1s ease;
+  transition: box-shadow .1s ease, border-color .1s ease, -webkit-box-shadow .1s ease;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+
+.ui-input-box-div-is-danger {
+  background: #ffcbc0 !important;
+}
+
+.is-danger {
+  color: #ff3860;
+  font-size: 0.95rem;
+  margin-top: .25rem;
+}
+
+.label {
+  color: #363636;
+  display: block;
+  font-size: 1.3em;
+  font-weight: 700;
+  padding-bottom: 0.6em;
+}
+
+
+@media only screen and (max-width: 468px) {
+    .input-input-box-div-text {
+      font-size: 1.3em;
+      width: 10em !important;
+    }
+
+    .div-remote-class-control {
+        margin-top: 0.3em;
+    }
+  .label-formatted-equity-checkbox {
+    margin-left: 2.2em;
+    text-align: center;
+    padding-right: 1.1em;
+  }
+
+  .add-more-screening-questions-btn {
+    margin: auto;
+    width: 100%;
+    display: flex !important;
+    flex-direction: row !important;
+    background-color: azure;
+    justify-content: center;
+    width: 81%;
+    min-height: 6em;
+    text-align: center;
+    line-height: 5em;
+    font-size: 2em;
+    border-radius: 1em;
+    border-color: white;
+    border: 0.2em solid ghostwhite;
+    color: cadetblue;
+  }
+
+  .screening-question-label {
+    text-align: center;
+    font-size: 1em;
+    color: cadetblue;
+    line-height: 3em;
+  }
+
+  .screening-question-inside-text-area {
+    margin: 2em auto auto auto;
+    max-width: 17em;
+    display: flex !important;
+    flex-direction: row !important;
+    background-color: azure;
+    justify-content: center;
+    min-height: 6em;
+    text-align: center;
+    line-height: 0.1em;
+    font-size: 2em;
+    border-radius: 1em;
+    border: 0.2em solid ghostwhite;
+    color: cadetblue;
+    position: relative;
+  }
+
+  .div-screening-questions-class {
+    position: relative !important;
+  }
+
+  .div-main-container-apply-form {
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+  }
+
+
+  .add-remove-screening-question-btn {
+    position: relative;
+    border-top-width: 1px;
+    justify-content: center;
+    background-color: #3383c8;
+    font-family: 'Raleway', sans-serif;
+    transition: 0.3s ease-in-out;
+    font-size: 2em;
+    font-weight: bolder;
+    border-radius: 4.4em;
+    padding: 1em 1em 1em 1em;
+    color: white;
+  }
+
+  .div-remote-input {
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    margin-top: 2em;
+  }
+
+  .remote-field {
+    margin: 3em;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+  }
+
+  .close {
+    position: absolute;
+    right: 69px;
+    top: 24px;
+    width: 10px;
+    height: 97px;
+    opacity: 0.3;
+    z-index: 999 !important;
+  }
+
+  .ui-input-box-div-text {
+    font-size: 1.3em;
+    width: 13em !important;
+  }
+
+  .div-location-field {
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    width: 20em;
+  }
+}
+
+@media only screen and (min-width: 468px) and (max-width: 666px) {
+    .input-input-box-div-text {
+      font-size: 1.3em;
+      width: 10em !important;
+    }
+
+    .div-remote-class-control {
+        margin-top: 0.3em;
+    }
+  .label-formatted-equity-checkbox {
+
+    margin-left: 2.2em;
+    text-align: center;
+    padding-right: 1.1em;
+  }
+
+  .add-more-screening-questions-btn {
+    margin: auto;
+    width: 100%;
+    display: flex !important;
+    flex-direction: row !important;
+    background-color: azure;
+    justify-content: center;
+    width: 81%;
+    min-height: 6em;
+    text-align: center;
+    line-height: 5em;
+    font-size: 2em;
+    border-radius: 1em;
+    border-color: white;
+    border: 0.2em solid ghostwhite;
+    color: cadetblue;
+  }
+
+  .screening-question-label {
+    text-align: center;
+    font-size: 1em;
+    color: cadetblue;
+    line-height: 3em;
+  }
+
+  .screening-question-inside-text-area {
+    margin: 2em auto auto auto;
+    max-width: 17em;
+    display: flex !important;
+    flex-direction: row !important;
+    background-color: azure;
+    justify-content: center;
+    min-height: 6em;
+    text-align: center;
+    line-height: 0.1em;
+    font-size: 2em;
+    border-radius: 1em;
+    border: 0.2em solid ghostwhite;
+    color: cadetblue;
+    position: relative;
+  }
+
+  .div-screening-questions-class {
+    position: relative !important;
+  }
+
+  .div-main-container-apply-form {
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+  }
+
+
+  .add-remove-screening-question-btn {
+    position: relative;
+    border-top-width: 1px;
+    justify-content: center;
+    background-color: #3383c8;
+    font-family: 'Raleway', sans-serif;
+    transition: 0.3s ease-in-out;
+    font-size: 2em;
+    font-weight: bolder;
+    border-radius: 4.4em;
+    padding: 1em 1em 1em 1em;
+    color: white;
+  }
+
+  .div-remote-input {
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    margin-top: 2em;
+  }
+
+  .remote-field {
+    margin: 3em;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+  }
+
+  .close {
+    position: absolute;
+    right: 69px;
+    top: 24px;
+    width: 10px;
+    height: 97px;
+    opacity: 0.3;
+    z-index: 999 !important;
+  }
+
+  .ui-input-box-div-text {
+    font-size: 1.3em;
+    width: 13em !important;
+  }
+
+  .div-location-field {
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    width: 20em;
+  }
+}
+
+@media only screen and (min-width: 667px) and (max-width: 766px) {
+    .input-input-box-div-text {
+      font-size: 1.3em;
+      width: 10em !important;
+    }
+
+    .div-remote-class-control {
+        margin-top: 0.3em;
+    }
+  .label-formatted-equity-checkbox {
+
+    margin-left: 2.2em;
+    text-align: center;
+    padding-right: 1.1em;
+  }
+
+  .add-more-screening-questions-btn {
+    margin: auto;
+    width: 100%;
+    display: flex !important;
+    flex-direction: row !important;
+    background-color: azure;
+    justify-content: center;
+    width: 81%;
+    min-height: 6em;
+    text-align: center;
+    line-height: 5em;
+    font-size: 2em;
+    border-radius: 1em;
+    border-color: white;
+    border: 0.2em solid ghostwhite;
+    color: cadetblue;
+  }
+
+  .screening-question-label {
+    text-align: center;
+    font-size: 1em;
+    color: cadetblue;
+    line-height: 3em;
+  }
+
+  .screening-question-inside-text-area {
+    margin: 2em auto auto auto;
+    max-width: 17em;
+    display: flex !important;
+    flex-direction: row !important;
+    background-color: azure;
+    justify-content: center;
+    min-height: 6em;
+    text-align: center;
+    line-height: 0.1em;
+    font-size: 2em;
+    border-radius: 1em;
+    border: 0.2em solid ghostwhite;
+    color: cadetblue;
+    position: relative;
+  }
+
+  .div-screening-questions-class {
+    position: relative !important;
+  }
+
+  .div-main-container-apply-form {
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+  }
+
+
+  .add-remove-screening-question-btn {
+    position: relative;
+    border-top-width: 1px;
+    justify-content: center;
+    background-color: #3383c8;
+    font-family: 'Raleway', sans-serif;
+    transition: 0.3s ease-in-out;
+    font-size: 2em;
+    font-weight: bolder;
+    border-radius: 4.4em;
+    padding: 1em 1em 1em 1em;
+    color: white;
+  }
+
+  .div-remote-input {
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    margin-top: 2em;
+  }
+
+  .remote-field {
+    margin: 3em;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+  }
+
+  .close {
+    position: absolute;
+    right: 69px;
+    top: 24px;
+    width: 10px;
+    height: 97px;
+    opacity: 0.3;
+    z-index: 999 !important;
+  }
+
+  .ui-input-box-div-text {
+    font-size: 1.3em;
+    width: 26em !important;
+  }
+
+  .div-location-field {
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    width: 20em;
+  }
+}
+
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+    .input-input-box-div-text {
+      font-size: 1.3em;
+      width: 12em !important;
+    }
+
+    .div-remote-class-control {
+        margin-top: 0.3em;
+    }
+  .label-formatted-equity-checkbox {
+
+    margin-left: 2.2em;
+    text-align: center;
+    padding-right: 1.1em;
+  }
+
+  .add-more-screening-questions-btn {
+    margin: auto;
+    width: 100%;
+    display: flex !important;
+    flex-direction: row !important;
+    background-color: azure;
+    justify-content: center;
+    width: 81%;
+    min-height: 6em;
+    text-align: center;
+    line-height: 5em;
+    font-size: 2em;
+    border-radius: 1em;
+    border-color: white;
+    border: 0.2em solid ghostwhite;
+    color: cadetblue;
+  }
+
+  .screening-question-label {
+    text-align: center;
+    font-size: 1em;
+    color: cadetblue;
+    line-height: 3em;
+  }
+
+  .screening-question-inside-text-area {
+    margin: 2em auto auto auto;
+    max-width: 17em;
+    display: flex !important;
+    flex-direction: row !important;
+    background-color: azure;
+    justify-content: center;
+    min-height: 6em;
+    text-align: center;
+    line-height: 0.1em;
+    font-size: 2em;
+    border-radius: 1em;
+    border: 0.2em solid ghostwhite;
+    color: cadetblue;
+    position: relative;
+  }
+
+  .div-screening-questions-class {
+    position: relative !important;
+  }
+
+  .div-main-container-apply-form {
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+  }
+
+
+  .add-remove-screening-question-btn {
+    position: relative;
+    border-top-width: 1px;
+    justify-content: center;
+    background-color: #3383c8;
+    font-family: 'Raleway', sans-serif;
+    transition: 0.3s ease-in-out;
+    font-size: 2em;
+    font-weight: bolder;
+    border-radius: 4.4em;
+    padding: 1em 1em 1em 1em;
+    color: white;
+  }
+
+  .div-remote-input {
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    margin-top: 2em;
+  }
+
+  .remote-field {
+    margin: 3em;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+  }
+
+  .close {
+    position: absolute;
+    right: 69px;
+    top: 24px;
+    width: 10px;
+    height: 97px;
+    opacity: 0.3;
+    z-index: 999 !important;
+  }
+
+  .ui-input-box-div-text {
+    font-size: 1.3em;
+    width: 26em !important;
+  }
+
+  .div-location-field {
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    width: 20em;
+  }
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+    .input-input-box-div-text {
+      font-size: 1.3em;
+      width: 33em !important;
+    }
+
+    .div-remote-class-control {
+        margin-top: 0.3em;
+    }
+  .label-formatted-equity-checkbox {
+
+    margin-left: 2.2em;
+    text-align: center;
+    padding-right: 1.1em;
+  }
+
+  .add-more-screening-questions-btn {
+    margin: auto;
+    width: 100%;
+    display: flex !important;
+    flex-direction: row !important;
+    background-color: azure;
+    justify-content: center;
+    width: 81%;
+    min-height: 6em;
+    text-align: center;
+    line-height: 5em;
+    font-size: 2em;
+    border-radius: 1em;
+    border-color: white;
+    border: 0.2em solid ghostwhite;
+    color: cadetblue;
+  }
+
+  .screening-question-label {
+    text-align: center;
+    font-size: 1em;
+    color: cadetblue;
+    line-height: 3em;
+  }
+
+  .screening-question-inside-text-area {
+    margin: 2em auto auto auto;
+    max-width: 17em;
+    display: flex !important;
+    flex-direction: row !important;
+    background-color: azure;
+    justify-content: center;
+    min-height: 6em;
+    text-align: center;
+    line-height: 0.1em;
+    font-size: 2em;
+    border-radius: 1em;
+    border: 0.2em solid ghostwhite;
+    color: cadetblue;
+    position: relative;
+  }
+
+  .div-screening-questions-class {
+    position: relative !important;
+  }
+
+  .div-main-container-apply-form {
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .add-remove-screening-question-btn {
+    position: relative;
+    border-top-width: 1px;
+    justify-content: center;
+    background-color: #3383c8;
+    font-family: 'Raleway', sans-serif;
+    transition: 0.3s ease-in-out;
+    font-size: 2em;
+    font-weight: bolder;
+    border-radius: 4.4em;
+    padding: 1em 1em 1em 1em;
+    color: white;
+  }
+
+  .div-remote-input {
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    margin-top: 2em;
+  }
+
+  .remote-field {
+    margin: 3em;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+  }
+
+  .close {
+    position: absolute;
+    right: 69px;
+    top: 24px;
+    width: 10px;
+    height: 97px;
+    opacity: 0.3;
+    z-index: 999 !important;
+  }
+
+  .ui-input-box-div-text {
+    font-size: 1.3em;
+    width: 30em !important;
+  }
+
+  .div-location-field {
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    width: 20em;
+  }
+}
+
+@media only screen and (min-width: 1200px) and (max-width: 1919px) {
+    .input-input-box-div-text {
+      font-size: 1.3em;
+      width: 33em !important;
+    }
+
+    .div-remote-class-control {
+        margin-top: 0.5em;
+    }
+  .label-formatted-equity-checkbox {
+
+    margin-left: 2.3em;
+    text-align: center;
+    padding-right: 1.1em;
+  }
+
+  .add-more-screening-questions-btn {
+    margin: auto;
+    min-width: 555px !important;
+    display: flex !important;
+    flex-direction: row !important;
+    background-color: azure;
+    justify-content: center;
+    min-height: 6em;
+    text-align: center;
+    line-height: 5em;
+    font-size: 2em;
+    border-radius: 1em;
+    border-color: white;
+    border: 0.2em solid ghostwhite;
+    color: cadetblue;
+    position: sticky !important;
+    top: 25px !important;
+    z-index: 1000 !important;
+  }
+
+  .screening-question-label {
+    text-align: center;
+    font-size: 1em;
+    color: cadetblue;
+    line-height: 3em;
+  }
+
+  .screening-question-inside-text-area {
+    margin: 2em auto auto auto;
+    width: 81%;
+    display: flex !important;
+    flex-direction: row !important;
+    background-color: azure;
+    justify-content: center;
+    min-height: 6em;
+    text-align: center;
+    line-height: 0.1em;
+    font-size: 2em;
+    border-radius: 1em;
+    border: 0.2em solid ghostwhite;
+    color: cadetblue;
+    position: relative;
+  }
+
+  .div-screening-questions-class {
+    position: sticky !important;
+    top: 0px !important
+  }
+
+  .div-main-container-apply-form {
+    justify-content: center;
+    display: flex;
+    flex-direction: row;
+  }
+
+  .add-remove-screening-question-btn {
+    position: relative;
+    border-top-width: 1px;
+    justify-content: center;
+    background-color: #3383c8;
+    font-family: 'Raleway', sans-serif;
+    transition: 0.3s ease-in-out;
+    font-size: 2em;
+    font-weight: bolder;
+    border-radius: 4.4em;
+    padding: 1em 1em 1em 1em;
+    color: white;
+  }
+
+  .div-remote-input {
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    margin-top: 3em;
+    margin-left: 2em;
+  }
+
+  .remote-field {
+    margin: 3em;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+  }
+
+  .close {
+    position: absolute;
+    right: 69px;
+    top: 24px;
+    width: 10px;
+    height: 97px;
+    opacity: 0.3;
+    z-index: 999 !important;;
+  }
+
+  .ui-input-box-div-text {
+    font-size: 1.3em;
+    width: 35em !important;
+  }
+
+  .div-location-field {
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    width: 20em;
+  }
+
+  .ui-input-box-div-textbox {
+        max-width: 368px;
+    font-size: 0.69em !important;
+    height: 153px;
+    width: 590px;
+    min-width: 368px;
+    }
+}
+
+@media only screen and (min-width: 1920px) {
+    .input-input-box-div-text {
+      font-size: 1.3em;
+      width: 33em !important;
+    }
+
+    .div-remote-class-control {
+        margin-top: 0.5em;
+    }
+  .label-formatted-equity-checkbox {
+
+    margin-left: 2.3em;
+    text-align: center;
+    padding-right: 1.1em;
+  }
+
+  .add-more-screening-questions-btn {
+    margin: auto;
+    display: flex !important;
+    flex-direction: row !important;
+    background-color: azure;
+    justify-content: center;
+    min-width: 555px !important;
+    min-height: 6em;
+    text-align: center;
+    line-height: 5em;
+    font-size: 2em;
+    border-radius: 1em;
+    border-color: white;
+    border: 0.2em solid ghostwhite;
+    color: cadetblue;
+    position: sticky !important;
+    top: 25px !important;
+    z-index: 1000 !important;
+  }
+
+  .screening-question-label {
+    text-align: center;
+    font-size: 1em;
+    color: cadetblue;
+    line-height: 3em;
+  }
+
+  .screening-question-inside-text-area {
+    margin: 2em auto auto auto;
+    width: 81%;
+    display: flex !important;
+    flex-direction: row !important;
+    background-color: azure;
+    justify-content: center;
+    min-height: 6em;
+    text-align: center;
+    line-height: 0.1em;
+    font-size: 2em;
+    border-radius: 1em;
+    border: 0.2em solid ghostwhite;
+    color: cadetblue;
+    position: relative;
+  }
+
+  .div-screening-questions-class {
+    position: sticky !important;
+    top: 0px !important
+  }
+
+  .div-main-container-apply-form {
+    justify-content: center;
+    display: flex;
+    flex-direction: row;
+  }
+
+  .add-remove-screening-question-btn {
+    position: relative;
+    border-top-width: 1px;
+    justify-content: center;
+    background-color: #3383c8;
+    font-family: 'Raleway', sans-serif;
+    transition: 0.3s ease-in-out;
+    font-size: 2em;
+    font-weight: bolder;
+    border-radius: 4.4em;
+    padding: 1em 1em 1em 1em;
+    color: white;
+  }
+
+  .div-remote-input {
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    margin-left: 2em;
+  }
+
+
+  .remote-field {
+    margin: 3em;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+  }
+
+  .close {
+    position: absolute;
+    right: 87px;
+    top: 55px;
+    width: 99px;
+    height: 97px;
+    opacity: 0.3;
+    z-index: 999 !important;
+  }
+
+  .ui-input-box-div-text {
+    font-size: 1.3em;
+    width: 35em !important;
+  }
+
+
+    .ui-input-box-div-textbox {
+        max-width: 368px;
+    font-size: 0.69em !important;
+    height: 153px;
+    width: 590px;
+    min-width: 368px;
+    }
+
+  .div-location-field {
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+  }
+}

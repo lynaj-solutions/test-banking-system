@@ -1,0 +1,11 @@
+sudo: required
+dist: trusty
+
+services:
+- docker
+
+install:
+- sudo docker-compose -f docker-compose-test.yml build
+
+script:
+- docker-compose run --rm app py.test

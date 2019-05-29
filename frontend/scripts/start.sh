@@ -1,0 +1,1 @@
+apt-get update && apt-get install -y openjdk-8-jdk && apt-get install -y ant && apt-get clean &&  apt-get update && apt-get install ca-certificates-java && apt-get clean &&  update-ca-certificates -f && export JAVA_HOME=/usr/lib/jvm/java-8-openjdk-amd64/

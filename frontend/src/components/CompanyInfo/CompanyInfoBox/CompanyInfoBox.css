@@ -1,0 +1,100 @@
+.company-image-leading-button{
+	height: 15% !important;
+	font-size: 1.2em !important;	
+}
+
+.slide-fade-enter-active {
+  transition: all .3s ease;
+}
+.slide-fade-leave-active {
+  transition: all .8s cubic-bezier(1.0, 0.5, 0.8, 1.0);
+}
+.slide-fade-enter, .slide-fade-leave-to
+/* .slide-fade-leave-active below version 2.1.8 */ {
+  transform: translateX(10px);
+  opacity: 0;
+}
+
+.fade-enter-active, .fade-leave-active {
+  transition: opacity .5s;
+}
+.fade-enter, .fade-leave-to /* .fade-leave-active below version 2.1.8 */ {
+  opacity: 0;
+}
+
+.company-info-box-main-class {
+	-webkit-box-shadow: 0 15px 35px rgba(50, 50, 93, 0.1), 0 5px 15px rgba(0, 0, 0, 0.07);
+	box-shadow: 0 15px 35px rgba(50, 50, 93, 0.1), 0 5px 15px rgba(0, 0, 0, 0.07);
+	-webkit-transition-property: color, background-color, -webkit-box-shadow, -webkit-transform;
+	transition-property: color, background-color, -webkit-box-shadow, -webkit-transform;
+	transition-property: color, background-color, box-shadow, transform;
+	transition-property: color, background-color, box-shadow, transform, -webkit-box-shadow, -webkit-transform;
+	-webkit-transition-duration: 0.15s;
+	transition-duration: 0.15s;
+	box-shadow: 0 15px 35px rgba(50, 50, 93, 0.1), 0 5px 15px rgba(0, 0, 0, 0.07);
+  	transition-property: color, background-color, box-shadow, transform;
+}
+
+
+.company-info-box-main-class:hover {
+  color: #32325d !important;
+  transform: translateY(-5px);
+  box-shadow: 0 18px 35px rgba(50, 50, 93, 0.1), 0 8px 15px rgba(0, 0, 0, 0.07);	
+}
+
+@media only screen and (max-width: 468px) {
+	.text-formatted-title {
+	  font-size: 1em !important;
+	}
+	.company-info-box-main-class {
+	width: 600px !important;
+	}
+}
+@media only screen and (min-width: 468px) and (max-width: 666px) {
+	.text-formatted-title {
+	  font-size: 1em !important;
+	}
+	.company-info-box-main-class {
+	width: 600px !important;
+	}
+}
+@media only screen and (min-width: 667px) and (max-width: 766px) {
+	.text-formatted-title {
+	  font-size: 1em !important;
+	}
+	.company-info-box-main-class {
+	width: 600px !important;
+	}
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+	.text-formatted-title {
+	  font-size: 1em !important;
+	}
+	.company-info-box-main-class {
+	width: 600px !important;
+	}
+}
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+	.text-formatted-title {
+	  font-size: 1em !important;
+	}
+	.company-info-box-main-class {
+	width: 600px !important;
+	}
+}
+@media only screen and (min-width: 1200px) and (max-width: 1919px) {
+	.text-formatted-title {
+	  font-size: 1em !important;
+	}
+	.company-info-box-main-class {
+	width: 600px !important;
+	}
+}
+@media only screen and (min-width: 1920px) {
+	.text-formatted-title {
+	  font-size: 1em !important;
+	}
+	.company-info-box-main-class {
+	width: 600px !important;
+	}
+}
