@@ -37,7 +37,7 @@ ipython-genutils==0.2.0
 jedi==0.12.1
 Jinja2==2.10.1
 kombu==4.5.0
-lxml==4.3.3
+lxml==4.6.3
 MarkupSafe==1.1.1
 mccabe==0.6.1
 MutPy==0.6.0
